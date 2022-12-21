@@ -16,7 +16,8 @@ public class PruebaAritmetica {
         System.out.println("aritmetica2 a:" + aritmetica2.a);
         System.out.println("aritmetica2 b:" + aritmetica2.b);
 
-        
+        //aritmetica1 = null;
+        //System.gc();
 
     }
 
