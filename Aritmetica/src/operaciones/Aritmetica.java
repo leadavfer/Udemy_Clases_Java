@@ -1,40 +1,37 @@
 package operaciones;
 
 public class Aritmetica {
-
-    //Atributos de la clase
+    
+    //Atributos de la Clase
     int a;
     int b;
     
-    //Constructor vacio
+    //constructor vacio
     public Aritmetica(){
-        System.out.println("Ejecutando constructor");
+        System.out.println("Ejecutando Constructor");
     }
     
-    //Sobrecarga de constructores 1 o mas constructores
+    //Constructor con argumentos
     public Aritmetica(int a, int b){
-        this.a = a;
-        this.b = b;
-        System.out.println("Ejecutando constructor con argumentos");
+    this.a = a;
+    this.b = b;
+        System.out.println("Ejecutando Constructor con Argumentos");
     }
-
-    //Metodo
-    public void sumar() {
-        int resultado = a + b;
+    
+    //Metodos
+    public void sumar(){
+        int resultado = this.a + this.b;
         System.out.println("resultado = " + resultado);
     }
-
-    public int sumarConRetorno() {
-        //int resultado = a + b;
-        //return resultado;
+    
+    public int SumarConRetorno(){
         return this.a + this.b;
     }
     
-    public int sumarConArgumentos(int a, int b){
-        this.a = a;//el argumento a se asigna al atributo this.a
-        this.b = b;
-        //return a + b;
-        return this.sumarConRetorno();
+    public int SumarConArgumentos(int a, int b){
+    this.a = a; // El argumento a se le asigna a this.a
+    this.b = b;
+    
+    return SumarConRetorno();
     }
-
 }
