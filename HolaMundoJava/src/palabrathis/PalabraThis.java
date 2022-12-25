@@ -21,6 +21,18 @@ class Persona {
         this.nombre = nombre;
         this.apellido = apellido;
         System.out.println("Objeto persona usando this: " + this);
+        new Imprimir().imprimir(this);
     }
-    
+
+    class Imprimir{
+        public Imprimir(){
+            super();//se manda a llamar el constructor de la clase objet (padre) para reservar memoria
+        }
+        
+        public void imprimir(Persona persona){
+            System.out.println("persona desde imprimir: "+ persona);
+            System.out.println("Impresion del objeto actual(this): " + this);
+        }
+    }
+
 }
